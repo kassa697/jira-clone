@@ -23,7 +23,9 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
             </Link>
           </Button>
         </nav>
-        <div className="flex flex-col items-center justify-center pt-4 md:pt-14">
+        {/* items-centerを入れるとsigupcardがなぜか横幅に */}
+        {/* 0804 なぜか直ったのでimc追加した */}
+        <div className="flex flex-col items-center px-20 justify-center pt-4 md:pt-14">
           {children}
         </div>
       </div>
